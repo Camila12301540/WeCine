@@ -27,7 +27,6 @@ body {
   color: var(--text-dark);
 }
 
-/* ── NAVBAR ── */
 #menu {
   min-height: 160px;
   height: auto;
@@ -226,7 +225,6 @@ body {
   transform: scale(1.05);
 }
 
-/* ── PAGE TITLE ── */
 .page-title-section {
   background: #494640;
   text-align: center;
@@ -249,7 +247,6 @@ body {
   -webkit-text-stroke: 1px var(--red);
 }
 
-/* ── MAIN CONTENT ── */
 main {
   padding: 0 24px 60px;
   display: flex;
@@ -259,7 +256,6 @@ main {
   margin: 0 auto;
 }
 
-/* ── CARD BASE ── */
 .card {
   border-radius: 18px;
   overflow: hidden;
@@ -269,7 +265,6 @@ main {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
 }
 
-/* ── CARD 1 — CRIAR CONTA ── */
 .card-register .card-visual {
   background: radial-gradient(ellipse at 30% 40%, #e8002a 0%, #8B0012 55%, #4a0009 100%);
   position: relative;
@@ -401,7 +396,6 @@ main {
   transform: translateY(0);
 }
 
-/* ── CARD 2 — INTERESSES ── */
 .card-interests {
   grid-template-columns: 1.4fr 1fr;
   background: #f7f7e8;
@@ -478,42 +472,51 @@ main {
   width: 100%;
 }
 
-/* ── TICKER FOOTER ── */
-.ticker-wrap {
-  background: var(--red);
+#faixa-ticker {
+  background-color: #FDFDAA;
   overflow: hidden;
   white-space: nowrap;
   padding: 14px 0;
+  position: relative;
+  margin-top: auto;
 }
 
-.ticker-inner {
-  display: inline-block;
-  animation: ticker 18s linear infinite;
-}
-
-.ticker-inner span {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 22px;
-  letter-spacing: 2px;
-  color: var(--white);
-  padding: 0 18px;
-}
-
-.ticker-inner span.dot {
-  color: var(--yellow);
+#ticker-inner {
+  display: inline-flex;
+  gap: 0;
+  animation: ticker 20s linear infinite;
 }
 
 @keyframes ticker {
-  0% {
+  from {
     transform: translateX(0);
   }
 
-  100% {
+  to {
     transform: translateX(-50%);
   }
 }
 
-/* ── FOOTER ── */
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 900;
+  font-size: 1em;
+  color: #A40B0B;
+  padding: 0 20px;
+  letter-spacing: 1px;
+}
+
+.ticker-logo {
+  background: #A40B0B;
+  color: #FDFDAA;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: 900;
+}
+
 
 footer {
   width: 100%;
@@ -527,7 +530,7 @@ footer {
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  margin-top: 40px;
+  margin-top: 0;
   flex-shrink: 0;
   padding-top: 25px;
   z-index: 99;

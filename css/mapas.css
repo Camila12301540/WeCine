@@ -34,7 +34,6 @@
      flex: 1;
  }
 
- /* ── MENU ── */
  #menu {
      min-height: 160px;
      height: auto;
@@ -98,7 +97,6 @@
      width: 100%;
  }
 
- /* Logo texto no centro do menu */
  .logo-texto {
      font-size: 2em;
      font-weight: 900;
@@ -112,7 +110,6 @@
      padding: 15px;
  }
 
- /* ── MENU LATERAL ── */
  #menu-lateral {
      position: fixed;
      top: 0;
@@ -241,7 +238,6 @@
      transform: scale(1.05);
  }
 
- /* ── OVERLAY ── */
  #overlay {
      display: none;
      position: fixed;
@@ -254,7 +250,6 @@
      display: block;
  }
 
- /* ── HERO — imagem de capa com texto animado ── */
  #hero {
      position: relative;
      width: 100%;
@@ -321,7 +316,6 @@
      }
  }
 
- /* ── MAPA ── */
  #secao-mapa {
      background-color: #494640;
      ;
@@ -381,14 +375,13 @@
      display: block;
  }
 
- /* ── CINEMAS ── */
  #secao-cinemas {
      background-color: #494640;
      display: grid;
      grid-template-columns: 1fr 1fr;
  }
 
- /* Lista de cinemas */
+
  #lista-cinemas {
      padding: 40px 45px;
  }
@@ -427,7 +420,7 @@
      font-weight: 400;
  }
 
- /* Imagem lateral */
+
  #cinema-foto {
      position: relative;
      overflow: hidden;
@@ -454,7 +447,7 @@
      font-weight: 600;
  }
 
- /* ── TICKER / FAIXA INFERIOR ── */
+
  #faixa-ticker {
      background-color: #FDFDAA;
      overflow: hidden;
