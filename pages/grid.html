@@ -3,7 +3,7 @@
 -->
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +33,7 @@
                 </div>
             </nav>
         </header>
-    
+
         <aside id="menu-lateral">
             <div id="menu-lateral-content">
                 <button id="btn-fechar">&times;</button>
@@ -58,35 +58,30 @@
                 </nav>
             </div>
         </aside>
+
         <section id="content">
-            <nav id="menu-grade" aria-label="Gêneros">
-                <div>
-                    <a href="#" class="acao ativo">
-                        <div></div>
-                    </a>
-                    <a href="#" class="animacao">
-                        <div></div>
-                    </a>
-                    <a href="#" class="comedia">
-                        <div></div>
-                    </a>
-                    <a href="#" class="drama">
-                        <div></div>
-                    </a>
-                    <a href="#" class="romance">
-                        <div></div>
-                    </a>
-                    <a href="#" class="terror">
-                        <div></div>
-                    </a>
-                </div>
-            </nav>
             <br>
             <nav id="images">
-                <img src="../images/pipoca.png" alt="Pipoca">
-                <img id="grade" src="../images/gradeGeneroAcao.png" alt="Grade de gêneros">
-                <div></div>
+                <img src="../images/pipoca.png" alt="Pipoca" id="pipoca">
+                
+                <div class="grade-container">
+                    <img id="grade" src="../images/gradeGeneroAcao.png" alt="Grade de gêneros">
+                    
+                    <nav id="menu-grade" aria-label="Gêneros">
+                        <div>
+                            <a href="#" class="acao ativo" data-genero="gradeGeneroAcao.png"><div>Ação</div></a>
+                            <a href="#" class="animacao" data-genero="gradeGeneroAnimacao.png"><div>Animação</div></a>
+                            <a href="#" class="comedia" data-genero="gradeGeneroComedia.png"><div>Comédia</div></a>
+                            <a href="#" class="drama" data-genero="gradeGeneroDrama.png"><div>Drama</div></a>
+                            <a href="#" class="romance" data-genero="gradeGeneroRomance.png"><div>Romance</div></a>
+                            <a href="#" class="terror" data-genero="gradeGeneroTerror.png"><div>Terror</div></a>
+                        </div>
+                    </nav>
+                </div>
+                
+                <div class="decoracao-vazia"></div>
             </nav>
+            
             <section id="info-genero">
                 <p id="descricao-genero"></p>
             </section>
@@ -106,55 +101,35 @@
         <div id="footer-div">
             <div id="div-logo">
                 <h1>WeCine</h1>
-                <span>
-                    Descubra, avalie e viva o cinema em BH
-                </span>
+                <span>Descubra, avalie e viva o cinema em BH</span>
             </div>
             <div id="footer-links">
                 <div>
-                    <span>
-                        <h2>
-                            Navegação
-                        </h2>
-                    </span>
-                    <span>
-                        <ul>
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="#">Filmes</a></li>
-                            <li><a href="#">Ingressos</a></li>
-                            <li><a href="#">Sobre nós</a></li>
-                            <li><a href="#">Contato</a></li>
-                        </ul>
-                    </span> 
+                    <span><h2>Navegação</h2></span>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="#">Ingressos</a></li>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
                 </div>
                 <div id="institucional">
-                    <span>
-                        <h2>
-                            Institucional
-                        </h2>
-                    </span>
-                    <span>
-                        <ul>
-                            <li><a href="#">Quem Somos</a></li>
-                            <li><a href="#">Trabalhe conosco</a></li>
-                            <li><a href="#">Política de Privacidade</a></li>
-                            <li><a href="#">Termos de Uso</a></li>
-                        </ul>
-                    </span>
+                    <span><h2>Institucional</h2></span>
+                    <ul>
+                        <li><a href="#">Quem Somos</a></li>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
                 </div>
                 <div>
-                    <span>
-                        <h2>
-                            Contato
-                        </h2>
-                    </span>
-                    <span>
-                        <ul>
-                            <li>contato@wecine.com.br</li>
-                            <li>(31) 99999-9999</li>
-                            <li>Belo Horizonte - MG</li>
-                        </ul>
-                    </span>
+                    <span><h2>Contato</h2></span>
+                    <ul>
+                        <li>contato@wecine.com.br</li>
+                        <li>(31) 99999-9999</li>
+                        <li>Belo Horizonte - MG</li>
+                    </ul>
                 </div>
             </div>
         </div>
