@@ -207,3 +207,22 @@ document.querySelectorAll('#menu-lateral a').forEach(link => {
         menuLateral.classList.remove('ativo');
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const botoes = document.querySelectorAll(".genero-btn");
+    const imagemGrade = document.getElementById("grade");
+
+    botoes.forEach(botao => {
+        botao.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            botoes.forEach(b => b.classList.remove("ativo"));
+            
+            this.classList.add("ativo");
+
+            const novaImagem = this.getAttribute("data-genero");
+
+            imagemGrade.src = `../images/${novaImagem}`;
+        });
+    });
+});
