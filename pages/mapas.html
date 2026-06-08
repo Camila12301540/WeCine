@@ -4,196 +4,175 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeCine — Cinemas em BH</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="../css/mapas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/mapas.css">
 </head>
+
 <body>
 
-<div id="conteudo-principal">
-    <header id="menu">
-        <nav id="menu-nav" aria-label="Navegação principal">
-            <div>
-                <button id="btn-menu" role="button" aria-label="Abrir menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true">
-                        <path fill="rgb(255,255,255)" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
-                    </svg>
-                </button>
-            </div>
-            <div id="logo-div">
-                <a href="index.html" class="logo-texto"><img src="../images/logo.png" alt=""></a>
-            </div>
-            <div id="busca">
+    <div id="conteudo-principal">
+        <header id="menu">
+            <nav id="menu-nav" aria-label="Navegação principal">
                 <div>
-                    <input id="search-input" type="search" placeholder="Buscar">
+                    <button id="btn-menu" role="button" aria-label="Abrir menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true">
+                            <path fill="rgb(255,255,255)"
+                                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                        </svg>
+                    </button>
                 </div>
-            </div>
-        </nav>
-    </header>
-
-    <aside id="menu-lateral">
-        <div id="menu-lateral-content">
-            <button id="btn-fechar">&times;</button>
-            <h1>WECINE</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Página inicial</a></li>
-                    <li><a href="grid.html">Grade de gênero</a></li>
-                    <li><a href="#">Nosso TOP 6</a></li>
-                    <li><a href="#">Filme do momento</a></li>
-                    <li><a href="#">Mapas</a></li>
-                    <li><a href="#">Formulário</a></li>
-                    <li>
-                        <div class="compra-container">
-                            <p class="compra-titulo">Compre seu ingresso</p>
-                            <p class="compra-descricao">Garantimos os melhores lugares para você!</p>
-                            <button class="btn-comprar">Comprar agora</button>
-                        </div>
-                    </li>
-                    <li><a href="#">Página sobre</a></li>
-                </ul>
-            </nav>
-        </div>
-    </aside>
-
-    <div id="overlay"></div>
-
-    <div id="content">
-
-        <!-- HERO -->
-        <section id="hero">
-            <img src="../images/image 120.png" alt="Vista aérea de Belo Horizonte">
-            <div id="hero-texto">
-                <h1 class="hero-titulo">MOVIE TIME</h1>
-                <h1 class="hero-titulo">MOVIE TIME</h1>
-                <h1 class="hero-titulo">MOVIE TIME</h1>
-            </div>
-        </section>
-
-        <!-- MAPA -->
-        <section id="secao-mapa">
-            <div id="mapa-wrapper">
-                <div id="mapa-overlay">
-                    <div class="mapa-titulo">
-                        <span>Cinemas BH</span>
-                        <p>Confira os cinemas mais perto de você</p>
+                <div id="logo-div">
+                    <a href="../index.html"><img id="logo" src="../images/logo.png" alt="Logo do site"></a>
+                </div>
+                <div id="busca">
+                    <div>
+                        <input id="search-input" type="search" placeholder="Buscar">
                     </div>
                 </div>
-                <iframe src="https://www.google.com/maps/d/embed?mid=1WgxO-QkD7GP3Sxouxxd8123QXzaC8ug&ehbc=2E312F" width="640" height="480"></iframe>
-            </div>
-        </section>
+            </nav>
+        </header>
 
-        <!-- CINEMAS -->
-        <section id="secao-cinemas">
-            <div id="lista-cinemas">
-                <div class="cinema-item">
-                    <h2>Cineart Boulevard</h2>
-                    <p>Av. dos Andrades, 3000 · 3036 · Santa Efigênia, BH.</p>
-                </div>
-                <div class="cinema-item">
-                    <h2>Cinema Cinemark</h2>
-                    <p>Av. do Contorno, 6061, Loja 3CT, São Pedro, BH.</p>
-                </div>
-                <div class="cinema-item">
-                    <h2>Una Cine Belas Artes</h2>
-                    <p>Rua Gonçalves Dias, 1581, Lourdes, BH.</p>
-                </div>
-                <div class="cinema-item">
-                    <h2>Cine Humberto Mauro</h2>
-                    <p>Av. Afonso Pena, 1537, Centro, BH.</p>
-                </div>
+        <aside id="menu-lateral">
+            <div id="menu-lateral-content">
+                <button id="btn-fechar">&times;</button>
+                <h1>WECINE</h1>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Página inicial</a></li>
+                        <li><a href="grid.html">Grade de gênero</a></li>
+                        <li><a href="tabela.html">Nosso TOP 6</a></li>
+                        <li><a href="filme-do-momento.html">Filme do momento</a></li>
+                        <li><a href="mapas.html">Mapas</a></li>
+                        <li><a href="formulario.html">Formulário</a></li>
+                        <li>
+                            <div class="compra-container">
+                                <p class="compra-titulo">Compre seu ingresso</p>
+                                <p class="compra-descricao">Garantimos os melhores lugares para você!</p>
+                                <button class="btn-comprar">Comprar agora</button>
+                            </div>
+                        </li>
+                        <li><a href="sobre.html">Página sobre</a></li>
+                    </ul>
+                </nav>
             </div>
+        </aside>
 
-            <div id="cinema-foto">
-                <img src="../images/image 131.png" alt="Interior de um cinema">
-                <div id="cinema-foto-legenda">Descubra quais cinemas estão pertinho de você!</div>
+        <div id="overlay"></div>
+
+        <div id="content">
+
+            <!-- HERO -->
+            <section id="hero">
+                <img src="../images/image 120.png" alt="Vista aérea de Belo Horizonte">
+                <div id="hero-texto">
+                    <h1 class="hero-titulo">MOVIE TIME</h1>
+                    <h1 class="hero-titulo">MOVIE TIME</h1>
+                    <h1 class="hero-titulo">MOVIE TIME</h1>
+                </div>
+            </section>
+
+            <!-- MAPA -->
+            <section id="secao-mapa">
+                <div id="mapa-wrapper">
+                    <div id="mapa-overlay">
+                        <div class="mapa-titulo">
+                            <span>Cinemas BH</span>
+                            <p>Confira os cinemas mais perto de você</p>
+                        </div>
+                    </div>
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1WgxO-QkD7GP3Sxouxxd8123QXzaC8ug&ehbc=2E312F"
+                        width="640" height="480"></iframe>
+                </div>
+            </section>
+
+            <!-- CINEMAS -->
+            <section id="secao-cinemas">
+                <div id="lista-cinemas">
+                    <div class="cinema-item">
+                        <h2>Cineart Boulevard</h2>
+                        <p>Av. dos Andrades, 3000 · 3036 · Santa Efigênia, BH.</p>
+                    </div>
+                    <div class="cinema-item">
+                        <h2>Cinema Cinemark</h2>
+                        <p>Av. do Contorno, 6061, Loja 3CT, São Pedro, BH.</p>
+                    </div>
+                    <div class="cinema-item">
+                        <h2>Una Cine Belas Artes</h2>
+                        <p>Rua Gonçalves Dias, 1581, Lourdes, BH.</p>
+                    </div>
+                    <div class="cinema-item">
+                        <h2>Cine Humberto Mauro</h2>
+                        <p>Av. Afonso Pena, 1537, Centro, BH.</p>
+                    </div>
+                </div>
+
+                <div id="cinema-foto">
+                    <img src="../images/image 131.png" alt="Interior de um cinema">
+                    <div id="cinema-foto-legenda">Descubra quais cinemas estão pertinho de você!</div>
+                </div>
+            </section>
+
+        </div><!-- /#content -->
+    </div><!-- /#conteudo-principal -->
+
+    <footer>
+        <div id="footer-div">
+            <div id="div-logo">
+                <h1>WeCine</h1>
+                <span>Descubra, avalie e viva o cinema em BH</span>
             </div>
-        </section>
-
-        <!-- TICKER -->
-        <div id="faixa-ticker">
-            <div id="ticker-inner">
-                <span class="ticker-item"><span class="ticker-logo">WeCine</span> WECINE</span>
-                <span class="ticker-item">WECINE</span>
-                <span class="ticker-item"><span class="ticker-logo">WeCine</span> WECINE</span>
-                <span class="ticker-item">WECINE</span>
-                <span class="ticker-item"><span class="ticker-logo">WeCine</span> WECINE</span>
-                <span class="ticker-item">WECINE</span>
-                <span class="ticker-item"><span class="ticker-logo">WeCine</span> WECINE</span>
-                <span class="ticker-item">WECINE</span>
-                <!-- duplicado para loop contínuo -->
-                <span class="ticker-item"><span class="ticker-logo">WeCine</span> WECINE</span>
-                <span class="ticker-item">WECINE</span>
-                <span class="ticker-item"><span class="ticker-logo">WeCine</span> WECINE</span>
-                <span class="ticker-item">WECINE</span>
-                <span class="ticker-item"><span class="ticker-logo">WeCine</span> WECINE</span>
-                <span class="ticker-item">WECINE</span>
-                <span class="ticker-item"><span class="ticker-logo">WeCine</span> WECINE</span>
-                <span class="ticker-item">WECINE</span>
+            <div id="footer-links">
+                <div>
+                    <span>
+                        <h2>Navegação</h2>
+                    </span>
+                    <span>
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Filmes</a></li>
+                            <li><a href="#">Ingressos</a></li>
+                            <li><a href="#">Sobre nós</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </span>
+                </div>
+                <div id="institucional">
+                    <span>
+                        <h2>Institucional</h2>
+                    </span>
+                    <span>
+                        <ul>
+                            <li><a href="#">Quem Somos</a></li>
+                            <li><a href="#">Trabalhe conosco</a></li>
+                            <li><a href="#">Política de Privacidade</a></li>
+                            <li><a href="#">Termos de Uso</a></li>
+                        </ul>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <h2>Contato</h2>
+                    </span>
+                    <span>
+                        <ul>
+                            <li>contato@wecine.com.br</li>
+                            <li>(31) 99999-9999</li>
+                            <li>Belo Horizonte - MG</li>
+                        </ul>
+                    </span>
+                </div>
             </div>
         </div>
+    </footer>
 
-    </div><!-- /#content -->
-</div><!-- /#conteudo-principal -->
-
-<footer>
-    <div id="footer-div">
-        <div id="div-logo">
-            <h1>WeCine</h1>
-            <span>Descubra, avalie e viva o cinema em BH</span>
-        </div>
-        <div id="footer-links">
-            <div>
-                <h2>Navegação</h2>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Filmes</a></li>
-                    <li><a href="#">Ingressos</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </div>
-            <div id="institucional">
-                <h2>Institucional</h2>
-                <ul>
-                    <li><a href="#">Quem Somos</a></li>
-                    <li><a href="#">Trabalhe conosco</a></li>
-                    <li><a href="#">Política de Privacidade</a></li>
-                    <li><a href="#">Termos de Uso</a></li>
-                </ul>
-            </div>
-            <div>
-                <h2>Contato</h2>
-                <ul>
-                    <li>contato@wecine.com.br</li>
-                    <li>(31) 99999-9999</li>
-                    <li>Belo Horizonte - MG</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<script>
-    const btnMenu = document.getElementById('btn-menu');
-    const btnFechar = document.getElementById('btn-fechar');
-    const menuLateral = document.getElementById('menu-lateral');
-    const overlay = document.getElementById('overlay');
-
-    btnMenu.addEventListener('click', () => {
-        menuLateral.classList.add('ativo');
-        overlay.classList.add('ativo');
-    });
-    btnFechar.addEventListener('click', fechar);
-    overlay.addEventListener('click', fechar);
-    function fechar() {
-        menuLateral.classList.remove('ativo');
-        overlay.classList.remove('ativo');
-    }
-</script>
+    <script src="../js/mapas.js"></script>
 
 </body>
+
 </html>
