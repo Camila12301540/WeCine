@@ -23,7 +23,7 @@ html {
 
 body {
   font-family: 'Barlow', sans-serif;
-  background: #494640;
+  background: #FDFDAA;
   color: var(--text-dark);
 }
 
@@ -226,7 +226,7 @@ body {
 }
 
 .page-title-section {
-  background: #494640;
+  background: #FDFDAA;
   text-align: center;
   padding: 36px 32px 24px;
 }
