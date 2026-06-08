@@ -420,7 +420,7 @@
     footer {
     width: 100%;
     min-height: 360px;
-    background-image: url('footer 1.png');
+    background-image: url('../images/footer.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center top;
